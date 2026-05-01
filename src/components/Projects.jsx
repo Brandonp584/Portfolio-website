@@ -29,7 +29,7 @@ export default function Projects() {
                 {projects.map((project) => (
                     <div 
                         key={project.title} 
-                        className="border border-gray-300 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-gray-900">
+                        className="border border-gray-300 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-gray-900 transform hover:scale-105 hover:shadow-lg">
 
                         <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">
                             {project.title}

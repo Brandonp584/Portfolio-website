@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
     return (
-        <section className="flex flex-col items-center justify-center text-center py-20 px-6">
+        <motion.section 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}            
+            className="flex flex-col items-center justify-center text-center py-20 px-6">
+
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
                 Brandon Powell
             </h1>
@@ -31,6 +38,6 @@ export default function Hero() {
                 </a>
             </div>
             
-        </section>
+        </motion.section>
     );
 }
