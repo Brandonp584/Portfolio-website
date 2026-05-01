@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,9 +8,12 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div>
-      <Navbar />
+    <div className={darkMode ? "bg-black text-white" : "bg-white text-black"}>
+
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <About />
       <Skills />
