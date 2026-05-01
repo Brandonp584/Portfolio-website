@@ -1,0 +1,33 @@
+export default function Skills() {
+    const skills = [
+        "React",
+        "Python",
+        "JavaScript",
+        "HTML/CSS",
+        "Node.js",
+        "Django",
+        "PostgreSQL",
+        "MongoDB",
+        "Git / Github",
+        "Problem Solving"
+    ];
+
+    return (
+        <section id="skills" className="py-20 px-6 max-w-5xl mx-auto">
+
+            <h2 className="text-3xl font-bold mb-6">Skills</h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {skills.map((skill) => (
+                    <div
+                        key={skill}
+                        className="border rounded-xl p-4 text-center bg-gray-50"
+                    >
+                        {skill}
+                    </div>
+                ))}
+            </div>
+
+        </section>
+    );
+}
