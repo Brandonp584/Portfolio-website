@@ -11,14 +11,16 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className={darkMode ? "bg-black text-white" : "bg-white text-black"}>
-
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+    <div className={darkMode ? "dark bg-black text-white min-h-screen" : "bg-white text-black min-h-screen"}>
+      
+      <div className="transition-all duration-300">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }

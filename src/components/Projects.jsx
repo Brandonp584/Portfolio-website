@@ -23,23 +23,25 @@ export default function Projects() {
     return (
         <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
 
-            <h2 className="text-3xl font-bold mb-6">Projects</h2>
+            <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">Projects</h2>
 
             <div className="grid md:grid-cols-2 gap-6">
                 {projects.map((project) => (
-                    <div key={project.title} className="border rounded-xl p-6">
+                    <div 
+                        key={project.title} 
+                        className="border border-gray-300 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-gray-900">
 
-                        <h3 className="text-xl font-semibold mb-2">
+                        <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">
                             {project.title}
                         </h3>
 
-                        <p className="text-gray-500 mb-3">
+                        <p className="text-gray-500 dark:text-gray-300 mb-3">
                             {project.description}
                         </p>
 
                         <div className="flex flex-wrap gap-2 mb-4">
                             {project.tech.map((t) => (
-                                <span key={t} className="text-sm border px-2 py-1 rounded">
+                                <span key={t} className="text-sm border border-gray-300 dark:border-gray-700 px-2 py-1 rounded text-black dark:text-white">
                                     {t}
                                 </span>
                             ))}
@@ -48,7 +50,7 @@ export default function Projects() {
                         <a
                             href={project.link}
                             target="_blank"
-                            className="text-blue-600"
+                            className="text-blue-600 dark:text-blue-400"
                         >
                             View Projects
                         </a>

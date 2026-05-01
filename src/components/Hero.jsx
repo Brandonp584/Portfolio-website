@@ -5,11 +5,11 @@ export default function Hero() {
                 Brandon Powell
             </h1>
 
-            <h2 className="text-xl md:text-2xl text-gray-400 mb-6">
+            <h2 className="text-xl md:text-2xl text-gray-400 dark:text-gray-300 mb-6">
                 IT Graduate | Aspiring Cybersecurity Professional
             </h2>
 
-            <p classNanme="maz-w-2xl text-gray-500 mb-8">
+            <p className="max-w-2xl text-gray-500 dark:text-gray-300 mb-8">
                 Full-stack Web developer with experience in React, Python, JavaScript, and databases.
                 Currently building cybersecurity skills through structured leraning and hands-on projects.
             </p>
