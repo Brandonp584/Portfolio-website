@@ -17,7 +17,7 @@ export default function Hero() {
             </h2>
 
             <p className="max-w-2xl text-gray-500 dark:text-gray-300 mb-8">
-                Full-stack Web developer with experience in React, Python, JavaScript, and databases.
+                Full-stack Web developer with experience in HTML, CSS, Node.js, React, Python, JavaScript, and databases.
                 Currently building cybersecurity skills through structured leraning and hands-on projects.
             </p>
 

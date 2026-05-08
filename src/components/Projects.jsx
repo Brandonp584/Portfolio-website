@@ -9,10 +9,10 @@ export default function Projects() {
             link: "https://github.com/Brandonp584"
         },
         {
-            title: "To-Do App (Coming Soon)",
+            title: "To-Do App",
             description: "Full-stack task manager with authentication and database storage.",
             tech: ["React", "Node.js", "MongoDB"],
-            link: "#"
+            link: "https://taskflow-by-brandon.netlify.app/"
         },
         {
             title: "Cybersecurity Tool (Coming Soon)",
