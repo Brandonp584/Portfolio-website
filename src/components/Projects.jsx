@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
     const projects = [
@@ -28,7 +29,8 @@ export default function Projects() {
             description:
                 "Interactive cybersecurity learning platform featuring investigation-based case studies, quizzes, XP progression, achievements, learning paths, and study content covering networking, databases, secure coding, operating systems, and security fundamentals.",
             tech: ["React", "JavaScript", "Vite", "Netlify"],
-            link: "https://cyber-detective-academy.netlify.app/"
+            link: "https://cyber-detective-academy.netlify.app/",
+            caseStudy: "/case-study/cyber-detective-academy"
         }
     ];
 
@@ -64,15 +66,26 @@ export default function Projects() {
                                     </span>
                                 ))}
                             </div>
+                            
+                            <div className="flex flex-col gap-2">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                                >
+                                    View Project
+                                </a>
 
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 dark:text-blue-400 hover:underline"
-                            >
-                                View Project
-                            </a>
+                                {project.caseStudy && (
+                                    <Link 
+                                        to={project.caseStudy}
+                                        className="text-blue-600 dark:text-blue-400 hover:underline"
+                                    >
+                                        View Case Study
+                                    </Link>
+                                )}
+                            </div>
                         </div>
                     ))}
                 </div>
