@@ -24,11 +24,11 @@ export default function Projects() {
             link: "https://taskflow-by-brandon.netlify.app/"
         },
         {
-            title: "Portfolio Website",
+            title: "Cyber Detective Academy",
             description:
-                "React and Tailwind portfolio website showcasing my cybersecurity projects, web development work, technical skills, and career goals.",
-            tech: ["React", "Tailwind", "Netlify"],
-            link: "https://portfolio-website1998.netlify.app/"
+                "Interactive cybersecurity learning platform featuring investigation-based case studies, quizzes, XP progression, achievements, learning paths, and study content covering networking, databases, secure coding, operating systems, and security fundamentals.",
+            tech: ["React", "JavaScript", "Vite", "Netlify"],
+            link: "https://cyber-detective-academy.netlify.app/"
         }
     ];
 
