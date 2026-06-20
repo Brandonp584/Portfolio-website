@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import CyberDetectiveCaseStudy from "./pages/CyberDetectiveCaseStudy";
+import BlueTeamSocAnalystSimulatorCaseStudy from "./pages/BlueTeamSocAnalystSimulatorCaseStudy";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -41,6 +42,10 @@ function App() {
           <Route
             path="/case-study/cyber-detective-academy"
             element={<CyberDetectiveCaseStudy />}
+          />
+          <Route
+            path="/case-study/blue-team-soc-analyst-simulator"
+            element={<BlueTeamSocAnalystSimulatorCaseStudy />}
           />
         </Routes>
 

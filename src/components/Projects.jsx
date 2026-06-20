@@ -4,6 +4,30 @@ import { Link } from "react-router-dom";
 export default function Projects() {
     const projects = [
         {
+            title: "Blue Team SOC Analyst Simulator",
+            description:
+                "Full-stack Security Operations Center (SOC) analyst training platform featuring alert triage, incident investigation workflows, MITRE ATT&CK mapping, threat intelligence analysis, JWT authentication, MongoDB persistence, investigation history, and analyst performance tracking.",
+            tech: [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "JWT",
+                "Render",
+                "Netlify"
+            ],
+                link: "https://blue-team-soc-analyst-simulator.netlify.app/",
+                caseStudy: "/case-study/blue-team-soc-analyst-simulator"
+        },
+        {
+            title: "Cyber Detective Academy",
+            description:
+                "Interactive cybersecurity learning platform featuring investigation-based case studies, quizzes, XP progression, achievements, learning paths, and study content covering networking, databases, secure coding, operating systems, and security fundamentals.",
+            tech: ["React", "JavaScript", "Vite", "Netlify"],
+            link: "https://cyber-detective-academy.netlify.app/",
+            caseStudy: "/case-study/cyber-detective-academy"
+        },
+        {
             title: "Secure Code Scanner",
             description:
                 "Python-based Static Application Security Testing (SAST) tool that detects hardcoded credentials, exposed secrets, insecure functions, weak hashing algorithms, SQL injection patterns, and command injection risks.",
@@ -23,14 +47,6 @@ export default function Projects() {
                 "Full-stack MERN task manager with user authentication, protected routes, MongoDB storage, priority levels, filtering, and drag-and-drop task ordering.",
             tech: ["React", "Node.js", "MongoDB", "Express"],
             link: "https://taskflow-by-brandon.netlify.app/"
-        },
-        {
-            title: "Cyber Detective Academy",
-            description:
-                "Interactive cybersecurity learning platform featuring investigation-based case studies, quizzes, XP progression, achievements, learning paths, and study content covering networking, databases, secure coding, operating systems, and security fundamentals.",
-            tech: ["React", "JavaScript", "Vite", "Netlify"],
-            link: "https://cyber-detective-academy.netlify.app/",
-            caseStudy: "/case-study/cyber-detective-academy"
         }
     ];
 
